@@ -1,0 +1,7 @@
+# BIP39 document generator jazzy settings
+
+copyright: Copyright 2020 Bitmark Inc
+author: Anh Nguyen
+xcodebuild_arguments: [-target, BIP39-iOS]
+clean: true
+output: ./Documentation
