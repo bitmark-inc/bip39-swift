@@ -7,22 +7,113 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D9C42A222745900000A6585 /* BIP39.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* BIP39.swift */; };
-		3D9C42B1227459C1000A6585 /* BIP39.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* BIP39.swift */; };
-		3D9C42BF227459F6000A6585 /* BIP39.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* BIP39.swift */; };
-		3D9C42CD22745A28000A6585 /* BIP39.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* BIP39.swift */; };
-		3D9C42F62274604A000A6585 /* BIP39.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* BIP39.framework */; };
+		21AF9B7C246108B0002F3E51 /* csuffix_strings.inc in Sources */ = {isa = PBXBuildFile; fileRef = 21AF9B7B246108B0002F3E51 /* csuffix_strings.inc */; };
+		21AF9B7D246108B0002F3E51 /* csuffix_strings.inc in Sources */ = {isa = PBXBuildFile; fileRef = 21AF9B7B246108B0002F3E51 /* csuffix_strings.inc */; };
+		21AF9B7E246108B0002F3E51 /* csuffix_strings.inc in Sources */ = {isa = PBXBuildFile; fileRef = 21AF9B7B246108B0002F3E51 /* csuffix_strings.inc */; };
+		21AF9B7F246108B0002F3E51 /* csuffix_strings.inc in Sources */ = {isa = PBXBuildFile; fileRef = 21AF9B7B246108B0002F3E51 /* csuffix_strings.inc */; };
+		21AF9B812461101E002F3E51 /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21AF9B802461101E002F3E51 /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21AF9B822461101E002F3E51 /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21AF9B802461101E002F3E51 /* BIP39.h */; };
+		21AF9B832461101E002F3E51 /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21AF9B802461101E002F3E51 /* BIP39.h */; };
+		21AF9B842461101E002F3E51 /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21AF9B802461101E002F3E51 /* BIP39.h */; };
+		21AF9B8724613E02002F3E51 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF9B8624613E02002F3E51 /* Constant.swift */; };
+		21AF9B8824613E02002F3E51 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF9B8624613E02002F3E51 /* Constant.swift */; };
+		21AF9B8924613E02002F3E51 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF9B8624613E02002F3E51 /* Constant.swift */; };
+		21AF9B8A24613E02002F3E51 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF9B8624613E02002F3E51 /* Constant.swift */; };
+		21D4B87A2459855E00FDA978 /* carduino-support.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8792459855E00FDA978 /* carduino-support.h */; };
+		21D4B87B2459855E00FDA978 /* carduino-support.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8792459855E00FDA978 /* carduino-support.h */; };
+		21D4B87C2459855E00FDA978 /* carduino-support.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8792459855E00FDA978 /* carduino-support.h */; };
+		21D4B87D2459855E00FDA978 /* carduino-support.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8792459855E00FDA978 /* carduino-support.h */; };
+		21D4B87F2459862900FDA978 /* cbc-bip39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B87E2459862900FDA978 /* cbc-bip39.h */; };
+		21D4B8802459862900FDA978 /* cbc-bip39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B87E2459862900FDA978 /* cbc-bip39.h */; };
+		21D4B8812459862900FDA978 /* cbc-bip39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B87E2459862900FDA978 /* cbc-bip39.h */; };
+		21D4B8822459862900FDA978 /* cbc-bip39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B87E2459862900FDA978 /* cbc-bip39.h */; };
+		21D4B8842459864400FDA978 /* cbip39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8832459864400FDA978 /* cbip39.h */; };
+		21D4B8852459864400FDA978 /* cbip39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8832459864400FDA978 /* cbip39.h */; };
+		21D4B8862459864400FDA978 /* cbip39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8832459864400FDA978 /* cbip39.h */; };
+		21D4B8872459864400FDA978 /* cbip39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8832459864400FDA978 /* cbip39.h */; };
+		21D4B8892459865700FDA978 /* cindex_char.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8882459865700FDA978 /* cindex_char.h */; };
+		21D4B88A2459865700FDA978 /* cindex_char.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8882459865700FDA978 /* cindex_char.h */; };
+		21D4B88B2459865700FDA978 /* cindex_char.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8882459865700FDA978 /* cindex_char.h */; };
+		21D4B88C2459865700FDA978 /* cindex_char.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8882459865700FDA978 /* cindex_char.h */; };
+		21D4B88E2459867900FDA978 /* cprefix1.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B88D2459867900FDA978 /* cprefix1.h */; };
+		21D4B88F2459867900FDA978 /* cprefix1.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B88D2459867900FDA978 /* cprefix1.h */; };
+		21D4B8902459867900FDA978 /* cprefix1.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B88D2459867900FDA978 /* cprefix1.h */; };
+		21D4B8912459867900FDA978 /* cprefix1.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B88D2459867900FDA978 /* cprefix1.h */; };
+		21D4B8932459868A00FDA978 /* cprefix2.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8922459868A00FDA978 /* cprefix2.h */; };
+		21D4B8942459868A00FDA978 /* cprefix2.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8922459868A00FDA978 /* cprefix2.h */; };
+		21D4B8952459868A00FDA978 /* cprefix2.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8922459868A00FDA978 /* cprefix2.h */; };
+		21D4B8962459868A00FDA978 /* cprefix2.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8922459868A00FDA978 /* cprefix2.h */; };
+		21D4B898245986A300FDA978 /* csuffix_array.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B897245986A300FDA978 /* csuffix_array.h */; };
+		21D4B899245986A300FDA978 /* csuffix_array.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B897245986A300FDA978 /* csuffix_array.h */; };
+		21D4B89A245986A300FDA978 /* csuffix_array.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B897245986A300FDA978 /* csuffix_array.h */; };
+		21D4B89B245986A300FDA978 /* csuffix_array.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B897245986A300FDA978 /* csuffix_array.h */; };
+		21D4B8A1245986EE00FDA978 /* cbip39.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8A0245986EE00FDA978 /* cbip39.c */; };
+		21D4B8A2245986EE00FDA978 /* cbip39.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8A0245986EE00FDA978 /* cbip39.c */; };
+		21D4B8A3245986EE00FDA978 /* cbip39.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8A0245986EE00FDA978 /* cbip39.c */; };
+		21D4B8A4245986EE00FDA978 /* cbip39.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8A0245986EE00FDA978 /* cbip39.c */; };
+		21D4B8AA2459874B00FDA978 /* cprefix1.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8A92459874B00FDA978 /* cprefix1.c */; };
+		21D4B8AB2459874B00FDA978 /* cprefix1.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8A92459874B00FDA978 /* cprefix1.c */; };
+		21D4B8AC2459874B00FDA978 /* cprefix1.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8A92459874B00FDA978 /* cprefix1.c */; };
+		21D4B8AD2459874B00FDA978 /* cprefix1.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8A92459874B00FDA978 /* cprefix1.c */; };
+		21D4B8B3245987A900FDA978 /* cprefix2.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8B2245987A900FDA978 /* cprefix2.c */; };
+		21D4B8B4245987A900FDA978 /* cprefix2.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8B2245987A900FDA978 /* cprefix2.c */; };
+		21D4B8B5245987A900FDA978 /* cprefix2.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8B2245987A900FDA978 /* cprefix2.c */; };
+		21D4B8B6245987A900FDA978 /* cprefix2.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8B2245987A900FDA978 /* cprefix2.c */; };
+		21D4B8BC245987B200FDA978 /* csuffix_array.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8BB245987B200FDA978 /* csuffix_array.c */; };
+		21D4B8BD245987B200FDA978 /* csuffix_array.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8BB245987B200FDA978 /* csuffix_array.c */; };
+		21D4B8BE245987B200FDA978 /* csuffix_array.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8BB245987B200FDA978 /* csuffix_array.c */; };
+		21D4B8BF245987B200FDA978 /* csuffix_array.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8BB245987B200FDA978 /* csuffix_array.c */; };
+		21D4B8C7245988A800FDA978 /* bc-crypto-base.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8C6245988A800FDA978 /* bc-crypto-base.h */; };
+		21D4B8C8245988A800FDA978 /* bc-crypto-base.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8C6245988A800FDA978 /* bc-crypto-base.h */; };
+		21D4B8C9245988A800FDA978 /* bc-crypto-base.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8C6245988A800FDA978 /* bc-crypto-base.h */; };
+		21D4B8CA245988A800FDA978 /* bc-crypto-base.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8C6245988A800FDA978 /* bc-crypto-base.h */; };
+		21D4B8CC245988B300FDA978 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8CB245988B300FDA978 /* hmac.h */; };
+		21D4B8CD245988B300FDA978 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8CB245988B300FDA978 /* hmac.h */; };
+		21D4B8CE245988B300FDA978 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8CB245988B300FDA978 /* hmac.h */; };
+		21D4B8CF245988B300FDA978 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8CB245988B300FDA978 /* hmac.h */; };
+		21D4B8D1245988C000FDA978 /* memzero.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8D0245988C000FDA978 /* memzero.h */; };
+		21D4B8D2245988C000FDA978 /* memzero.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8D0245988C000FDA978 /* memzero.h */; };
+		21D4B8D3245988C000FDA978 /* memzero.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8D0245988C000FDA978 /* memzero.h */; };
+		21D4B8D4245988C000FDA978 /* memzero.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8D0245988C000FDA978 /* memzero.h */; };
+		21D4B8D6245988C900FDA978 /* options.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8D5245988C800FDA978 /* options.h */; };
+		21D4B8D7245988C900FDA978 /* options.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8D5245988C800FDA978 /* options.h */; };
+		21D4B8D8245988C900FDA978 /* options.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8D5245988C800FDA978 /* options.h */; };
+		21D4B8D9245988C900FDA978 /* options.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8D5245988C800FDA978 /* options.h */; };
+		21D4B8DB245988D200FDA978 /* pbkdf2.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8DA245988D200FDA978 /* pbkdf2.h */; };
+		21D4B8DC245988D200FDA978 /* pbkdf2.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8DA245988D200FDA978 /* pbkdf2.h */; };
+		21D4B8DD245988D200FDA978 /* pbkdf2.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8DA245988D200FDA978 /* pbkdf2.h */; };
+		21D4B8DE245988D200FDA978 /* pbkdf2.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8DA245988D200FDA978 /* pbkdf2.h */; };
+		21D4B8E0245988DB00FDA978 /* sha2.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8DF245988DB00FDA978 /* sha2.h */; };
+		21D4B8E1245988DB00FDA978 /* sha2.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8DF245988DB00FDA978 /* sha2.h */; };
+		21D4B8E2245988DB00FDA978 /* sha2.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8DF245988DB00FDA978 /* sha2.h */; };
+		21D4B8E3245988DB00FDA978 /* sha2.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8DF245988DB00FDA978 /* sha2.h */; };
+		21D4B8E5245988EF00FDA978 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8E4245988EF00FDA978 /* hmac.c */; };
+		21D4B8E6245988EF00FDA978 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8E4245988EF00FDA978 /* hmac.c */; };
+		21D4B8E7245988EF00FDA978 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8E4245988EF00FDA978 /* hmac.c */; };
+		21D4B8E8245988EF00FDA978 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8E4245988EF00FDA978 /* hmac.c */; };
+		21D4B8EE245988F800FDA978 /* memzero.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8ED245988F800FDA978 /* memzero.c */; };
+		21D4B8EF245988F800FDA978 /* memzero.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8ED245988F800FDA978 /* memzero.c */; };
+		21D4B8F0245988F800FDA978 /* memzero.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8ED245988F800FDA978 /* memzero.c */; };
+		21D4B8F1245988F800FDA978 /* memzero.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8ED245988F800FDA978 /* memzero.c */; };
+		21D4B8F72459890100FDA978 /* pbkdf2.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8F62459890100FDA978 /* pbkdf2.c */; };
+		21D4B8F82459890100FDA978 /* pbkdf2.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8F62459890100FDA978 /* pbkdf2.c */; };
+		21D4B8F92459890100FDA978 /* pbkdf2.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8F62459890100FDA978 /* pbkdf2.c */; };
+		21D4B8FA2459890100FDA978 /* pbkdf2.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8F62459890100FDA978 /* pbkdf2.c */; };
+		21D4B9002459890E00FDA978 /* sha2.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8FF2459890E00FDA978 /* sha2.c */; };
+		21D4B9012459890E00FDA978 /* sha2.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8FF2459890E00FDA978 /* sha2.c */; };
+		21D4B9022459890E00FDA978 /* sha2.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8FF2459890E00FDA978 /* sha2.c */; };
+		21D4B9032459890E00FDA978 /* sha2.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B8FF2459890E00FDA978 /* sha2.c */; };
+		21D4B90A24598E5F00FDA978 /* BIP39.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B90924598E5F00FDA978 /* BIP39.swift */; };
+		21D4B90B24598E5F00FDA978 /* BIP39.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B90924598E5F00FDA978 /* BIP39.swift */; };
+		21D4B90C24598E5F00FDA978 /* BIP39.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B90924598E5F00FDA978 /* BIP39.swift */; };
+		21D4B90D24598E5F00FDA978 /* BIP39.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B90924598E5F00FDA978 /* BIP39.swift */; };
 		3D9C42FC22746078000A6585 /* BIP39Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* BIP39Tests.swift */; };
-		3D9C43062274611B000A6585 /* BIP39.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C42A92274599D000A6585 /* BIP39.framework */; };
 		3D9C430C22746131000A6585 /* BIP39Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* BIP39Tests.swift */; };
-		3D9C431622746198000A6585 /* BIP39.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C42C522745A07000A6585 /* BIP39.framework */; };
 		3D9C431C227461AF000A6585 /* BIP39Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* BIP39Tests.swift */; };
 		3D9C43242274629B000A6585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43232274629B000A6585 /* AppDelegate.swift */; };
 		3D9C43262274629B000A6585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43252274629B000A6585 /* ViewController.swift */; };
 		3D9C432B2274629C000A6585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432A2274629C000A6585 /* Assets.xcassets */; };
 		3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432C2274629C000A6585 /* LaunchScreen.storyboard */; };
-		3D9C433422746323000A6585 /* BIP39.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* BIP39.framework */; };
-		3D9C433522746323000A6585 /* BIP39.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* BIP39.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +154,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3D9C433522746323000A6585 /* BIP39.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,10 +161,36 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		21AF9B7B246108B0002F3E51 /* csuffix_strings.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = csuffix_strings.inc; sourceTree = "<group>"; };
+		21AF9B802461101E002F3E51 /* BIP39.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIP39.h; sourceTree = "<group>"; };
+		21AF9B8524611698002F3E51 /* BIP39-iOSTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BIP39-iOSTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		21AF9B8624613E02002F3E51 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		21D4B8792459855E00FDA978 /* carduino-support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "carduino-support.h"; sourceTree = "<group>"; };
+		21D4B87E2459862900FDA978 /* cbc-bip39.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "cbc-bip39.h"; sourceTree = "<group>"; };
+		21D4B8832459864400FDA978 /* cbip39.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cbip39.h; sourceTree = "<group>"; };
+		21D4B8882459865700FDA978 /* cindex_char.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cindex_char.h; sourceTree = "<group>"; };
+		21D4B88D2459867900FDA978 /* cprefix1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cprefix1.h; sourceTree = "<group>"; };
+		21D4B8922459868A00FDA978 /* cprefix2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cprefix2.h; sourceTree = "<group>"; };
+		21D4B897245986A300FDA978 /* csuffix_array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csuffix_array.h; sourceTree = "<group>"; };
+		21D4B8A0245986EE00FDA978 /* cbip39.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cbip39.c; sourceTree = "<group>"; };
+		21D4B8A92459874B00FDA978 /* cprefix1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cprefix1.c; sourceTree = "<group>"; };
+		21D4B8B2245987A900FDA978 /* cprefix2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cprefix2.c; sourceTree = "<group>"; };
+		21D4B8BB245987B200FDA978 /* csuffix_array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = csuffix_array.c; sourceTree = "<group>"; };
+		21D4B8C6245988A800FDA978 /* bc-crypto-base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "bc-crypto-base.h"; sourceTree = "<group>"; };
+		21D4B8CB245988B300FDA978 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		21D4B8D0245988C000FDA978 /* memzero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memzero.h; sourceTree = "<group>"; };
+		21D4B8D5245988C800FDA978 /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		21D4B8DA245988D200FDA978 /* pbkdf2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pbkdf2.h; sourceTree = "<group>"; };
+		21D4B8DF245988DB00FDA978 /* sha2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha2.h; sourceTree = "<group>"; };
+		21D4B8E4245988EF00FDA978 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		21D4B8ED245988F800FDA978 /* memzero.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memzero.c; sourceTree = "<group>"; };
+		21D4B8F62459890100FDA978 /* pbkdf2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pbkdf2.c; sourceTree = "<group>"; };
+		21D4B8FF2459890E00FDA978 /* sha2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha2.c; sourceTree = "<group>"; };
+		21D4B90924598E5F00FDA978 /* BIP39.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIP39.swift; sourceTree = "<group>"; };
+		21D4B912245996D600FDA978 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
 		3D9C429022745894000A6585 /* BIP39.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BIP39.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C429C227458E8000A6585 /* BIP39.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BIP39.plist; sourceTree = "<group>"; };
 		3D9C429D227458E8000A6585 /* BIP39Tests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BIP39Tests.plist; sourceTree = "<group>"; };
-		3D9C42A122745900000A6585 /* BIP39.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIP39.swift; sourceTree = "<group>"; };
 		3D9C42A92274599D000A6585 /* BIP39.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BIP39.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C42B7227459D6000A6585 /* BIP39.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BIP39.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C42C522745A07000A6585 /* BIP39.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BIP39.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,7 +249,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C42F62274604A000A6585 /* BIP39.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +256,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C43062274611B000A6585 /* BIP39.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +263,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C431622746198000A6585 /* BIP39.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,13 +270,75 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C433422746323000A6585 /* BIP39.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21D4B8772459847E00FDA978 /* CBip39 */ = {
+			isa = PBXGroup;
+			children = (
+				21D4B8A92459874B00FDA978 /* cprefix1.c */,
+				21D4B8BB245987B200FDA978 /* csuffix_array.c */,
+				21D4B8B2245987A900FDA978 /* cprefix2.c */,
+				21D4B8A0245986EE00FDA978 /* cbip39.c */,
+				21AF9B7B246108B0002F3E51 /* csuffix_strings.inc */,
+				21D4B8782459848F00FDA978 /* include */,
+				21AF9B8524611698002F3E51 /* BIP39-iOSTests-Bridging-Header.h */,
+			);
+			path = CBip39;
+			sourceTree = "<group>";
+		};
+		21D4B8782459848F00FDA978 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				21D4B8792459855E00FDA978 /* carduino-support.h */,
+				21D4B87E2459862900FDA978 /* cbc-bip39.h */,
+				21D4B8832459864400FDA978 /* cbip39.h */,
+				21D4B8882459865700FDA978 /* cindex_char.h */,
+				21D4B88D2459867900FDA978 /* cprefix1.h */,
+				21D4B8922459868A00FDA978 /* cprefix2.h */,
+				21D4B897245986A300FDA978 /* csuffix_array.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		21D4B8C42459887600FDA978 /* CCrypto-Base */ = {
+			isa = PBXGroup;
+			children = (
+				21D4B8FF2459890E00FDA978 /* sha2.c */,
+				21D4B8F62459890100FDA978 /* pbkdf2.c */,
+				21D4B8ED245988F800FDA978 /* memzero.c */,
+				21D4B8E4245988EF00FDA978 /* hmac.c */,
+				21D4B8C52459889900FDA978 /* include */,
+			);
+			path = "CCrypto-Base";
+			sourceTree = "<group>";
+		};
+		21D4B8C52459889900FDA978 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				21D4B8C6245988A800FDA978 /* bc-crypto-base.h */,
+				21D4B8CB245988B300FDA978 /* hmac.h */,
+				21D4B8D0245988C000FDA978 /* memzero.h */,
+				21D4B8D5245988C800FDA978 /* options.h */,
+				21D4B8DA245988D200FDA978 /* pbkdf2.h */,
+				21D4B8DF245988DB00FDA978 /* sha2.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		21D4B90824598DAE00FDA978 /* Bip39 */ = {
+			isa = PBXGroup;
+			children = (
+				21D4B90924598E5F00FDA978 /* BIP39.swift */,
+				21AF9B802461101E002F3E51 /* BIP39.h */,
+				21AF9B8624613E02002F3E51 /* Constant.swift */,
+			);
+			path = Bip39;
+			sourceTree = "<group>";
+		};
 		3D9C428622745894000A6585 = {
 			isa = PBXGroup;
 			children = (
@@ -204,9 +379,6 @@
 				3D9C42D822745DAF000A6585 /* .jazzy.yaml */,
 				3D9C42D922745DAF000A6585 /* .swiftlint.yml */,
 				3DB91AC4229AC263002668DA /* .travis.yml */,
-				3DB91AC5229AC26C002668DA,
-				3DB91AC6229AC272002668DA,
-				3DF6F6282315616D00706C4E,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -214,7 +386,10 @@
 		3D9C42A0227458FA000A6585 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				3D9C42A122745900000A6585 /* BIP39.swift */,
+				21D4B912245996D600FDA978 /* module.map */,
+				21D4B90824598DAE00FDA978 /* Bip39 */,
+				21D4B8C42459887600FDA978 /* CCrypto-Base */,
+				21D4B8772459847E00FDA978 /* CBip39 */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -255,6 +430,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21AF9B812461101E002F3E51 /* BIP39.h in Headers */,
+				21D4B8E0245988DB00FDA978 /* sha2.h in Headers */,
+				21D4B8842459864400FDA978 /* cbip39.h in Headers */,
+				21D4B8C7245988A800FDA978 /* bc-crypto-base.h in Headers */,
+				21D4B898245986A300FDA978 /* csuffix_array.h in Headers */,
+				21D4B87A2459855E00FDA978 /* carduino-support.h in Headers */,
+				21D4B87F2459862900FDA978 /* cbc-bip39.h in Headers */,
+				21D4B88E2459867900FDA978 /* cprefix1.h in Headers */,
+				21D4B8D6245988C900FDA978 /* options.h in Headers */,
+				21D4B8DB245988D200FDA978 /* pbkdf2.h in Headers */,
+				21D4B8D1245988C000FDA978 /* memzero.h in Headers */,
+				21D4B8892459865700FDA978 /* cindex_char.h in Headers */,
+				21D4B8CC245988B300FDA978 /* hmac.h in Headers */,
+				21D4B8932459868A00FDA978 /* cprefix2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +451,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21D4B8E1245988DB00FDA978 /* sha2.h in Headers */,
+				21D4B8852459864400FDA978 /* cbip39.h in Headers */,
+				21AF9B822461101E002F3E51 /* BIP39.h in Headers */,
+				21D4B8C8245988A800FDA978 /* bc-crypto-base.h in Headers */,
+				21D4B899245986A300FDA978 /* csuffix_array.h in Headers */,
+				21D4B87B2459855E00FDA978 /* carduino-support.h in Headers */,
+				21D4B8802459862900FDA978 /* cbc-bip39.h in Headers */,
+				21D4B88F2459867900FDA978 /* cprefix1.h in Headers */,
+				21D4B8D7245988C900FDA978 /* options.h in Headers */,
+				21D4B8DC245988D200FDA978 /* pbkdf2.h in Headers */,
+				21D4B8D2245988C000FDA978 /* memzero.h in Headers */,
+				21D4B88A2459865700FDA978 /* cindex_char.h in Headers */,
+				21D4B8CD245988B300FDA978 /* hmac.h in Headers */,
+				21D4B8942459868A00FDA978 /* cprefix2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +472,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21D4B8E2245988DB00FDA978 /* sha2.h in Headers */,
+				21D4B8862459864400FDA978 /* cbip39.h in Headers */,
+				21AF9B832461101E002F3E51 /* BIP39.h in Headers */,
+				21D4B8C9245988A800FDA978 /* bc-crypto-base.h in Headers */,
+				21D4B89A245986A300FDA978 /* csuffix_array.h in Headers */,
+				21D4B87C2459855E00FDA978 /* carduino-support.h in Headers */,
+				21D4B8812459862900FDA978 /* cbc-bip39.h in Headers */,
+				21D4B8902459867900FDA978 /* cprefix1.h in Headers */,
+				21D4B8D8245988C900FDA978 /* options.h in Headers */,
+				21D4B8DD245988D200FDA978 /* pbkdf2.h in Headers */,
+				21D4B8D3245988C000FDA978 /* memzero.h in Headers */,
+				21D4B88B2459865700FDA978 /* cindex_char.h in Headers */,
+				21D4B8CE245988B300FDA978 /* hmac.h in Headers */,
+				21D4B8952459868A00FDA978 /* cprefix2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +493,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21D4B8E3245988DB00FDA978 /* sha2.h in Headers */,
+				21D4B8872459864400FDA978 /* cbip39.h in Headers */,
+				21AF9B842461101E002F3E51 /* BIP39.h in Headers */,
+				21D4B8CA245988A800FDA978 /* bc-crypto-base.h in Headers */,
+				21D4B89B245986A300FDA978 /* csuffix_array.h in Headers */,
+				21D4B87D2459855E00FDA978 /* carduino-support.h in Headers */,
+				21D4B8822459862900FDA978 /* cbc-bip39.h in Headers */,
+				21D4B8912459867900FDA978 /* cprefix1.h in Headers */,
+				21D4B8D9245988C900FDA978 /* options.h in Headers */,
+				21D4B8DE245988D200FDA978 /* pbkdf2.h in Headers */,
+				21D4B8D4245988C000FDA978 /* memzero.h in Headers */,
+				21D4B88C2459865700FDA978 /* cindex_char.h in Headers */,
+				21D4B8CF245988B300FDA978 /* hmac.h in Headers */,
+				21D4B8962459868A00FDA978 /* cprefix2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,28 +674,35 @@
 				TargetAttributes = {
 					3D9C428F22745894000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1130;
 					};
 					3D9C42A82274599D000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1130;
 					};
 					3D9C42B6227459D6000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1130;
 					};
 					3D9C42C422745A07000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1130;
 					};
 					3D9C42F02274604A000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1130;
 					};
 					3D9C43002274611B000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1130;
 					};
 					3D9C431022746198000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1130;
 					};
 					3D9C43202274629B000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -634,7 +872,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C42A222745900000A6585 /* BIP39.swift in Sources */,
+				21D4B8E5245988EF00FDA978 /* hmac.c in Sources */,
+				21D4B8F72459890100FDA978 /* pbkdf2.c in Sources */,
+				21D4B8A1245986EE00FDA978 /* cbip39.c in Sources */,
+				21D4B8EE245988F800FDA978 /* memzero.c in Sources */,
+				21AF9B7C246108B0002F3E51 /* csuffix_strings.inc in Sources */,
+				21D4B8BC245987B200FDA978 /* csuffix_array.c in Sources */,
+				21D4B8B3245987A900FDA978 /* cprefix2.c in Sources */,
+				21D4B8AA2459874B00FDA978 /* cprefix1.c in Sources */,
+				21AF9B8724613E02002F3E51 /* Constant.swift in Sources */,
+				21D4B9002459890E00FDA978 /* sha2.c in Sources */,
+				21D4B90A24598E5F00FDA978 /* BIP39.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,7 +890,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C42B1227459C1000A6585 /* BIP39.swift in Sources */,
+				21D4B8E6245988EF00FDA978 /* hmac.c in Sources */,
+				21D4B8F82459890100FDA978 /* pbkdf2.c in Sources */,
+				21D4B8A2245986EE00FDA978 /* cbip39.c in Sources */,
+				21D4B8EF245988F800FDA978 /* memzero.c in Sources */,
+				21AF9B7D246108B0002F3E51 /* csuffix_strings.inc in Sources */,
+				21D4B8BD245987B200FDA978 /* csuffix_array.c in Sources */,
+				21D4B8B4245987A900FDA978 /* cprefix2.c in Sources */,
+				21D4B8AB2459874B00FDA978 /* cprefix1.c in Sources */,
+				21AF9B8824613E02002F3E51 /* Constant.swift in Sources */,
+				21D4B9012459890E00FDA978 /* sha2.c in Sources */,
+				21D4B90B24598E5F00FDA978 /* BIP39.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,7 +908,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C42BF227459F6000A6585 /* BIP39.swift in Sources */,
+				21D4B8E7245988EF00FDA978 /* hmac.c in Sources */,
+				21D4B8F92459890100FDA978 /* pbkdf2.c in Sources */,
+				21D4B8A3245986EE00FDA978 /* cbip39.c in Sources */,
+				21D4B8F0245988F800FDA978 /* memzero.c in Sources */,
+				21AF9B7E246108B0002F3E51 /* csuffix_strings.inc in Sources */,
+				21D4B8BE245987B200FDA978 /* csuffix_array.c in Sources */,
+				21D4B8B5245987A900FDA978 /* cprefix2.c in Sources */,
+				21D4B8AC2459874B00FDA978 /* cprefix1.c in Sources */,
+				21AF9B8924613E02002F3E51 /* Constant.swift in Sources */,
+				21D4B9022459890E00FDA978 /* sha2.c in Sources */,
+				21D4B90C24598E5F00FDA978 /* BIP39.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,7 +926,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C42CD22745A28000A6585 /* BIP39.swift in Sources */,
+				21D4B8E8245988EF00FDA978 /* hmac.c in Sources */,
+				21D4B8FA2459890100FDA978 /* pbkdf2.c in Sources */,
+				21D4B8A4245986EE00FDA978 /* cbip39.c in Sources */,
+				21D4B8F1245988F800FDA978 /* memzero.c in Sources */,
+				21AF9B7F246108B0002F3E51 /* csuffix_strings.inc in Sources */,
+				21D4B8BF245987B200FDA978 /* csuffix_array.c in Sources */,
+				21D4B8B6245987A900FDA978 /* cprefix2.c in Sources */,
+				21D4B8AD2459874B00FDA978 /* cprefix1.c in Sources */,
+				21AF9B8A24613E02002F3E51 /* Constant.swift in Sources */,
+				21D4B9032459890E00FDA978 /* sha2.c in Sources */,
+				21D4B90D24598E5F00FDA978 /* BIP39.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -768,6 +1046,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -791,6 +1070,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -834,6 +1114,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -850,6 +1131,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
@@ -921,6 +1203,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -941,6 +1224,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -951,6 +1235,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -981,6 +1266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -1001,6 +1287,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -1011,6 +1298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -1041,6 +1329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1064,6 +1353,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1072,6 +1362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1102,6 +1393,7 @@
 		3D9C42FA2274604A000A6585 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configs/BIP39Tests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1112,6 +1404,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark.BIP39-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/CBip39/BIP39-iOSTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1120,6 +1414,7 @@
 		3D9C42FB2274604A000A6585 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configs/BIP39Tests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1130,6 +1425,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark.BIP39-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/CBip39/BIP39-iOSTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1138,6 +1434,7 @@
 		3D9C430A2274611B000A6585 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configs/BIP39Tests.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1148,6 +1445,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark.BIP39-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/CBip39/BIP39-tvOSTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -1157,6 +1456,7 @@
 		3D9C430B2274611B000A6585 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configs/BIP39Tests.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1167,6 +1467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark.BIP39-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/CBip39/BIP39-tvOSTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -1176,6 +1477,7 @@
 		3D9C431A22746198000A6585 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1189,6 +1491,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark.BIP39-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/CBip39/BIP39-macOSTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1196,6 +1500,7 @@
 		3D9C431B22746198000A6585 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1209,6 +1514,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark.BIP39-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/CBip39/BIP39-macOSTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1218,6 +1524,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Example/Resources/Info.plist;
@@ -1229,6 +1536,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark-iOS.Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/CBip39/Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1239,6 +1548,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Example/Resources/Info.plist;
@@ -1250,6 +1560,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark-iOS.Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/CBip39/Example-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

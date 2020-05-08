@@ -12,9 +12,23 @@ import XCTest
 class BIP39Tests: XCTestCase {
     
     static var allTests = [
-        ("testExample", testExample),
+        (testForConvertToInt, testForConvertToWord, testWordsFromSecret),
     ]
     
-    func testExample() {}
+    func testForConvertToInt() {
+//        let data = BIP39Util.decodeBase64(string: "abandon")
+        let data = BIP39Util.decodeBase64(string: "vSwMiFeDLVceYF4LXzDB45w7O6jMzTF28yiYpe27Sk8=")
+        if let data = data {
+            XCTAssertEqual(try BIP39Util.Bip39WordFromMnemonic(word: data), 0)
+        }
+    }
+
+    func testForConvertToWord() {
+        XCTAssertEqual(BIP39Util.Bip39MnemonicFromWord(), "kien")
+    }
+
+    func testWordsFromSecret() {
+        XCTAssertEqual(BIP39Util.Bip39MnemonicFromWord(), "kien")
+    }
     
 }
