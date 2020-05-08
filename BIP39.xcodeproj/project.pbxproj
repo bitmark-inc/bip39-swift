@@ -15,10 +15,6 @@
 		21AF9B822461101E002F3E51 /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21AF9B802461101E002F3E51 /* BIP39.h */; };
 		21AF9B832461101E002F3E51 /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21AF9B802461101E002F3E51 /* BIP39.h */; };
 		21AF9B842461101E002F3E51 /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21AF9B802461101E002F3E51 /* BIP39.h */; };
-		21AF9B8724613E02002F3E51 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF9B8624613E02002F3E51 /* Constant.swift */; };
-		21AF9B8824613E02002F3E51 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF9B8624613E02002F3E51 /* Constant.swift */; };
-		21AF9B8924613E02002F3E51 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF9B8624613E02002F3E51 /* Constant.swift */; };
-		21AF9B8A24613E02002F3E51 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF9B8624613E02002F3E51 /* Constant.swift */; };
 		21D4B87A2459855E00FDA978 /* carduino-support.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8792459855E00FDA978 /* carduino-support.h */; };
 		21D4B87B2459855E00FDA978 /* carduino-support.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8792459855E00FDA978 /* carduino-support.h */; };
 		21D4B87C2459855E00FDA978 /* carduino-support.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8792459855E00FDA978 /* carduino-support.h */; };
@@ -164,7 +160,6 @@
 		21AF9B7B246108B0002F3E51 /* csuffix_strings.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = csuffix_strings.inc; sourceTree = "<group>"; };
 		21AF9B802461101E002F3E51 /* BIP39.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIP39.h; sourceTree = "<group>"; };
 		21AF9B8524611698002F3E51 /* BIP39-iOSTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BIP39-iOSTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		21AF9B8624613E02002F3E51 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		21D4B8792459855E00FDA978 /* carduino-support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "carduino-support.h"; sourceTree = "<group>"; };
 		21D4B87E2459862900FDA978 /* cbc-bip39.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "cbc-bip39.h"; sourceTree = "<group>"; };
 		21D4B8832459864400FDA978 /* cbip39.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cbip39.h; sourceTree = "<group>"; };
@@ -334,7 +329,6 @@
 			children = (
 				21D4B90924598E5F00FDA978 /* BIP39.swift */,
 				21AF9B802461101E002F3E51 /* BIP39.h */,
-				21AF9B8624613E02002F3E51 /* Constant.swift */,
 			);
 			path = Bip39;
 			sourceTree = "<group>";
@@ -880,7 +874,6 @@
 				21D4B8BC245987B200FDA978 /* csuffix_array.c in Sources */,
 				21D4B8B3245987A900FDA978 /* cprefix2.c in Sources */,
 				21D4B8AA2459874B00FDA978 /* cprefix1.c in Sources */,
-				21AF9B8724613E02002F3E51 /* Constant.swift in Sources */,
 				21D4B9002459890E00FDA978 /* sha2.c in Sources */,
 				21D4B90A24598E5F00FDA978 /* BIP39.swift in Sources */,
 			);
@@ -898,7 +891,6 @@
 				21D4B8BD245987B200FDA978 /* csuffix_array.c in Sources */,
 				21D4B8B4245987A900FDA978 /* cprefix2.c in Sources */,
 				21D4B8AB2459874B00FDA978 /* cprefix1.c in Sources */,
-				21AF9B8824613E02002F3E51 /* Constant.swift in Sources */,
 				21D4B9012459890E00FDA978 /* sha2.c in Sources */,
 				21D4B90B24598E5F00FDA978 /* BIP39.swift in Sources */,
 			);
@@ -916,7 +908,6 @@
 				21D4B8BE245987B200FDA978 /* csuffix_array.c in Sources */,
 				21D4B8B5245987A900FDA978 /* cprefix2.c in Sources */,
 				21D4B8AC2459874B00FDA978 /* cprefix1.c in Sources */,
-				21AF9B8924613E02002F3E51 /* Constant.swift in Sources */,
 				21D4B9022459890E00FDA978 /* sha2.c in Sources */,
 				21D4B90C24598E5F00FDA978 /* BIP39.swift in Sources */,
 			);
@@ -934,7 +925,6 @@
 				21D4B8BF245987B200FDA978 /* csuffix_array.c in Sources */,
 				21D4B8B6245987A900FDA978 /* cprefix2.c in Sources */,
 				21D4B8AD2459874B00FDA978 /* cprefix1.c in Sources */,
-				21AF9B8A24613E02002F3E51 /* Constant.swift in Sources */,
 				21D4B9032459890E00FDA978 /* sha2.c in Sources */,
 				21D4B90D24598E5F00FDA978 /* BIP39.swift in Sources */,
 			);
