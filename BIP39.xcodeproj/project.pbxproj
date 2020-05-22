@@ -102,10 +102,10 @@
 		3D9C43262274629B000A6585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43252274629B000A6585 /* ViewController.swift */; };
 		3D9C432B2274629C000A6585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432A2274629C000A6585 /* Assets.xcassets */; };
 		3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432C2274629C000A6585 /* LaunchScreen.storyboard */; };
-		5B70D6272477A5AC0035D3AC /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B70D6262477A5AC0035D3AC /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B70D6282477A5C30035D3AC /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B70D6262477A5AC0035D3AC /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B70D6292477A5C30035D3AC /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B70D6262477A5AC0035D3AC /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B70D62A2477A5C40035D3AC /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B70D6262477A5AC0035D3AC /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B70D6512477CEB10035D3AC /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B70D6502477CEB10035D3AC /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B70D6522477CF030035D3AC /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B70D6502477CEB10035D3AC /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B70D6542477CF040035D3AC /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B70D6502477CEB10035D3AC /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B70D6552477CF040035D3AC /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B70D6502477CEB10035D3AC /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,7 +201,7 @@
 		3D9C432D2274629C000A6585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9C432F2274629C000A6585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DB91AC4229AC263002668DA /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
-		5B70D6262477A5AC0035D3AC /* BIP39.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIP39.h; sourceTree = "<group>"; };
+		5B70D6502477CEB10035D3AC /* BIP39.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIP39.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,7 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				21D4B90924598E5F00FDA978 /* BIP39.swift */,
-				21AF9B802461101E002F3E51 /* BIP39.h */,
+				5B70D6502477CEB10035D3AC /* BIP39.h */,
 			);
 			path = Bip39;
 			sourceTree = "<group>";
@@ -414,7 +414,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21AF9B812461101E002F3E51 /* BIP39.h in Headers */,
+				5B70D6512477CEB10035D3AC /* BIP39.h in Headers */,
 				21D4B8E0245988DB00FDA978 /* sha2.h in Headers */,
 				21D4B8842459864400FDA978 /* cbip39.h in Headers */,
 				21D4B8C7245988A800FDA978 /* bc-crypto-base.h in Headers */,
@@ -435,9 +435,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B70D6522477CF030035D3AC /* BIP39.h in Headers */,
 				21D4B8E1245988DB00FDA978 /* sha2.h in Headers */,
 				21D4B8852459864400FDA978 /* cbip39.h in Headers */,
-				21AF9B822461101E002F3E51 /* BIP39.h in Headers */,
 				21D4B8C8245988A800FDA978 /* bc-crypto-base.h in Headers */,
 				21D4B899245986A300FDA978 /* csuffix_array.h in Headers */,
 				21D4B87B2459855E00FDA978 /* carduino-support.h in Headers */,
@@ -456,9 +456,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B70D6542477CF040035D3AC /* BIP39.h in Headers */,
 				21D4B8E2245988DB00FDA978 /* sha2.h in Headers */,
 				21D4B8862459864400FDA978 /* cbip39.h in Headers */,
-				21AF9B832461101E002F3E51 /* BIP39.h in Headers */,
 				21D4B8C9245988A800FDA978 /* bc-crypto-base.h in Headers */,
 				21D4B89A245986A300FDA978 /* csuffix_array.h in Headers */,
 				21D4B87C2459855E00FDA978 /* carduino-support.h in Headers */,
@@ -477,9 +477,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B70D6552477CF040035D3AC /* BIP39.h in Headers */,
 				21D4B8E3245988DB00FDA978 /* sha2.h in Headers */,
 				21D4B8872459864400FDA978 /* cbip39.h in Headers */,
-				21AF9B842461101E002F3E51 /* BIP39.h in Headers */,
 				21D4B8CA245988A800FDA978 /* bc-crypto-base.h in Headers */,
 				21D4B89B245986A300FDA978 /* csuffix_array.h in Headers */,
 				21D4B87D2459855E00FDA978 /* carduino-support.h in Headers */,
@@ -1121,10 +1121,10 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Z5CE7A3A7N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1151,10 +1151,10 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Z5CE7A3A7N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1371,6 +1371,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5CE7A3A7N;
 				INFOPLIST_FILE = Configs/BIP39Tests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1392,6 +1393,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5CE7A3A7N;
 				INFOPLIST_FILE = Configs/BIP39Tests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (

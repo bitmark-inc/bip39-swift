@@ -1,8 +1,8 @@
 #ifndef PREFIX1_H
 #define PREFIX1_H
 
-#include "cindex_char.h"
 #include "carduino-support.h"
+#include "cindex_char.h"
 
 #define PREFIX_1_LEN 25
 

@@ -7,7 +7,6 @@ extern "C" {
 
 #include "cbip39.h"
 
-
 #ifdef __cplusplus
 }
 #endif
