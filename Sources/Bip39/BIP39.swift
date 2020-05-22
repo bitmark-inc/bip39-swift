@@ -11,7 +11,7 @@ import Foundation
 
 private let mnemonicSparator = " "
 
-struct BIP39Util {
+public struct BIP39Util {
     
     public static func mnemonicFromWord(_ index: UInt16) -> String {
         var mnemonic: [CChar] = Array(repeating: 0, count: 20)

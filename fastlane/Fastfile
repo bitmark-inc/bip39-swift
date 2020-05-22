@@ -81,10 +81,6 @@ platform :ios do
       scheme: "BIP39-tvOS",
       clean: true
     )
-    # Perform macOS Tests
-    spm(command: "test")
-    # Delete SPM build artifacts
-    spm(command: "clean")
   end
 
   desc "Run Dependency-Manager compatibility tests"
@@ -97,10 +93,6 @@ platform :ios do
     )
     # Pod lib lint to ensure CocoaPods compatibility
     pod_lib_lint(allow_warnings: true)
-    # SPM Build to ensure Swift Package Manager compatibility
-    spm(command: "build")
-    # Delete SPM build artifacts
-    spm(command: "clean")
   end
 
 end

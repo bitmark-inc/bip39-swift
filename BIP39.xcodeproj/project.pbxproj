@@ -7,14 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21AF9B7C246108B0002F3E51 /* csuffix_strings.inc in Sources */ = {isa = PBXBuildFile; fileRef = 21AF9B7B246108B0002F3E51 /* csuffix_strings.inc */; };
-		21AF9B7D246108B0002F3E51 /* csuffix_strings.inc in Sources */ = {isa = PBXBuildFile; fileRef = 21AF9B7B246108B0002F3E51 /* csuffix_strings.inc */; };
-		21AF9B7E246108B0002F3E51 /* csuffix_strings.inc in Sources */ = {isa = PBXBuildFile; fileRef = 21AF9B7B246108B0002F3E51 /* csuffix_strings.inc */; };
-		21AF9B7F246108B0002F3E51 /* csuffix_strings.inc in Sources */ = {isa = PBXBuildFile; fileRef = 21AF9B7B246108B0002F3E51 /* csuffix_strings.inc */; };
-		21AF9B812461101E002F3E51 /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21AF9B802461101E002F3E51 /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21AF9B822461101E002F3E51 /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21AF9B802461101E002F3E51 /* BIP39.h */; };
-		21AF9B832461101E002F3E51 /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21AF9B802461101E002F3E51 /* BIP39.h */; };
-		21AF9B842461101E002F3E51 /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 21AF9B802461101E002F3E51 /* BIP39.h */; };
 		21D4B87A2459855E00FDA978 /* carduino-support.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8792459855E00FDA978 /* carduino-support.h */; };
 		21D4B87B2459855E00FDA978 /* carduino-support.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8792459855E00FDA978 /* carduino-support.h */; };
 		21D4B87C2459855E00FDA978 /* carduino-support.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D4B8792459855E00FDA978 /* carduino-support.h */; };
@@ -110,6 +102,10 @@
 		3D9C43262274629B000A6585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43252274629B000A6585 /* ViewController.swift */; };
 		3D9C432B2274629C000A6585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432A2274629C000A6585 /* Assets.xcassets */; };
 		3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432C2274629C000A6585 /* LaunchScreen.storyboard */; };
+		5B70D6272477A5AC0035D3AC /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B70D6262477A5AC0035D3AC /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B70D6282477A5C30035D3AC /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B70D6262477A5AC0035D3AC /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B70D6292477A5C30035D3AC /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B70D6262477A5AC0035D3AC /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B70D62A2477A5C40035D3AC /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B70D6262477A5AC0035D3AC /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,9 +153,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		21AF9B7B246108B0002F3E51 /* csuffix_strings.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = csuffix_strings.inc; sourceTree = "<group>"; };
-		21AF9B802461101E002F3E51 /* BIP39.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIP39.h; sourceTree = "<group>"; };
-		21AF9B8524611698002F3E51 /* BIP39-iOSTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BIP39-iOSTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		21D4B8792459855E00FDA978 /* carduino-support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "carduino-support.h"; sourceTree = "<group>"; };
 		21D4B87E2459862900FDA978 /* cbc-bip39.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "cbc-bip39.h"; sourceTree = "<group>"; };
 		21D4B8832459864400FDA978 /* cbip39.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cbip39.h; sourceTree = "<group>"; };
@@ -190,7 +183,6 @@
 		3D9C42B7227459D6000A6585 /* BIP39.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BIP39.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C42C522745A07000A6585 /* BIP39.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BIP39.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C42D222745B48000A6585 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
-		3D9C42D322745B48000A6585 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
 		3D9C42D422745B48000A6585 /* BIP39.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = BIP39.podspec; sourceTree = SOURCE_ROOT; };
 		3D9C42D522745B48000A6585 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		3D9C42D622745C9D000A6585 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Fastfile; path = fastlane/Fastfile; sourceTree = SOURCE_ROOT; };
@@ -209,6 +201,7 @@
 		3D9C432D2274629C000A6585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9C432F2274629C000A6585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DB91AC4229AC263002668DA /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
+		5B70D6262477A5AC0035D3AC /* BIP39.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIP39.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,9 +271,7 @@
 				21D4B8BB245987B200FDA978 /* csuffix_array.c */,
 				21D4B8B2245987A900FDA978 /* cprefix2.c */,
 				21D4B8A0245986EE00FDA978 /* cbip39.c */,
-				21AF9B7B246108B0002F3E51 /* csuffix_strings.inc */,
 				21D4B8782459848F00FDA978 /* include */,
-				21AF9B8524611698002F3E51 /* BIP39-iOSTests-Bridging-Header.h */,
 			);
 			path = CBip39;
 			sourceTree = "<group>";
@@ -365,7 +356,6 @@
 				3D9C429C227458E8000A6585 /* BIP39.plist */,
 				3D9C429D227458E8000A6585 /* BIP39Tests.plist */,
 				3D9C42D422745B48000A6585 /* BIP39.podspec */,
-				3D9C42D322745B48000A6585 /* Package.swift */,
 				3D9C42D622745C9D000A6585 /* Fastfile */,
 				3D9C42D222745B48000A6585 /* LICENSE */,
 				3D9C42D522745B48000A6585 /* README.md */,
@@ -870,7 +860,6 @@
 				21D4B8F72459890100FDA978 /* pbkdf2.c in Sources */,
 				21D4B8A1245986EE00FDA978 /* cbip39.c in Sources */,
 				21D4B8EE245988F800FDA978 /* memzero.c in Sources */,
-				21AF9B7C246108B0002F3E51 /* csuffix_strings.inc in Sources */,
 				21D4B8BC245987B200FDA978 /* csuffix_array.c in Sources */,
 				21D4B8B3245987A900FDA978 /* cprefix2.c in Sources */,
 				21D4B8AA2459874B00FDA978 /* cprefix1.c in Sources */,
@@ -887,7 +876,6 @@
 				21D4B8F82459890100FDA978 /* pbkdf2.c in Sources */,
 				21D4B8A2245986EE00FDA978 /* cbip39.c in Sources */,
 				21D4B8EF245988F800FDA978 /* memzero.c in Sources */,
-				21AF9B7D246108B0002F3E51 /* csuffix_strings.inc in Sources */,
 				21D4B8BD245987B200FDA978 /* csuffix_array.c in Sources */,
 				21D4B8B4245987A900FDA978 /* cprefix2.c in Sources */,
 				21D4B8AB2459874B00FDA978 /* cprefix1.c in Sources */,
@@ -904,7 +892,6 @@
 				21D4B8F92459890100FDA978 /* pbkdf2.c in Sources */,
 				21D4B8A3245986EE00FDA978 /* cbip39.c in Sources */,
 				21D4B8F0245988F800FDA978 /* memzero.c in Sources */,
-				21AF9B7E246108B0002F3E51 /* csuffix_strings.inc in Sources */,
 				21D4B8BE245987B200FDA978 /* csuffix_array.c in Sources */,
 				21D4B8B5245987A900FDA978 /* cprefix2.c in Sources */,
 				21D4B8AC2459874B00FDA978 /* cprefix1.c in Sources */,
@@ -921,7 +908,6 @@
 				21D4B8FA2459890100FDA978 /* pbkdf2.c in Sources */,
 				21D4B8A4245986EE00FDA978 /* cbip39.c in Sources */,
 				21D4B8F1245988F800FDA978 /* memzero.c in Sources */,
-				21AF9B7F246108B0002F3E51 /* csuffix_strings.inc in Sources */,
 				21D4B8BF245987B200FDA978 /* csuffix_array.c in Sources */,
 				21D4B8B6245987A900FDA978 /* cprefix2.c in Sources */,
 				21D4B8AD2459874B00FDA978 /* cprefix1.c in Sources */,
@@ -1394,7 +1380,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark.BIP39-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Sources/CBip39/BIP39-iOSTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1415,7 +1401,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark.BIP39-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Sources/CBip39/BIP39-iOSTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1435,7 +1421,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark.BIP39-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_OBJC_BRIDGING_HEADER = "Sources/CBip39/BIP39-tvOSTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1457,7 +1443,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark.BIP39-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_OBJC_BRIDGING_HEADER = "Sources/CBip39/BIP39-tvOSTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -1481,7 +1467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark.BIP39-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "Sources/CBip39/BIP39-macOSTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1504,7 +1490,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark.BIP39-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "Sources/CBip39/BIP39-macOSTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
