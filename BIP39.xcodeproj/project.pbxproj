@@ -106,6 +106,10 @@
 		5B70D6522477CF030035D3AC /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B70D6502477CEB10035D3AC /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B70D6542477CF040035D3AC /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B70D6502477CEB10035D3AC /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B70D6552477CF040035D3AC /* BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B70D6502477CEB10035D3AC /* BIP39.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B820425247CC277009442EF /* BIP39NewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B820424247CC277009442EF /* BIP39NewContext.swift */; };
+		5B820426247CC277009442EF /* BIP39NewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B820424247CC277009442EF /* BIP39NewContext.swift */; };
+		5B820427247CC277009442EF /* BIP39NewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B820424247CC277009442EF /* BIP39NewContext.swift */; };
+		5B820428247CC277009442EF /* BIP39NewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B820424247CC277009442EF /* BIP39NewContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +206,7 @@
 		3D9C432F2274629C000A6585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DB91AC4229AC263002668DA /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
 		5B70D6502477CEB10035D3AC /* BIP39.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIP39.h; sourceTree = "<group>"; };
+		5B820424247CC277009442EF /* BIP39NewContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIP39NewContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,8 +323,9 @@
 		21D4B90824598DAE00FDA978 /* Bip39 */ = {
 			isa = PBXGroup;
 			children = (
-				21D4B90924598E5F00FDA978 /* BIP39.swift */,
 				5B70D6502477CEB10035D3AC /* BIP39.h */,
+				21D4B90924598E5F00FDA978 /* BIP39.swift */,
+				5B820424247CC277009442EF /* BIP39NewContext.swift */,
 			);
 			path = Bip39;
 			sourceTree = "<group>";
@@ -856,6 +862,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B820425247CC277009442EF /* BIP39NewContext.swift in Sources */,
 				21D4B8E5245988EF00FDA978 /* hmac.c in Sources */,
 				21D4B8F72459890100FDA978 /* pbkdf2.c in Sources */,
 				21D4B8A1245986EE00FDA978 /* cbip39.c in Sources */,
@@ -872,6 +879,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B820426247CC277009442EF /* BIP39NewContext.swift in Sources */,
 				21D4B8E6245988EF00FDA978 /* hmac.c in Sources */,
 				21D4B8F82459890100FDA978 /* pbkdf2.c in Sources */,
 				21D4B8A2245986EE00FDA978 /* cbip39.c in Sources */,
@@ -888,6 +896,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B820427247CC277009442EF /* BIP39NewContext.swift in Sources */,
 				21D4B8E7245988EF00FDA978 /* hmac.c in Sources */,
 				21D4B8F92459890100FDA978 /* pbkdf2.c in Sources */,
 				21D4B8A3245986EE00FDA978 /* cbip39.c in Sources */,
@@ -904,6 +913,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B820428247CC277009442EF /* BIP39NewContext.swift in Sources */,
 				21D4B8E8245988EF00FDA978 /* hmac.c in Sources */,
 				21D4B8FA2459890100FDA978 /* pbkdf2.c in Sources */,
 				21D4B8A4245986EE00FDA978 /* cbip39.c in Sources */,

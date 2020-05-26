@@ -44,7 +44,7 @@ public struct BIP39Util {
     public static func secretFromMnemonics(_ mnemonics: [String]) -> Data? {
         let maxLength = 1024
         let mnemonicString = mnemonics.joined(separator: mnemonicSparator)
-        
+
         var secret = Data(count: maxLength)
         let len = secret.withUnsafeMutableBytes { (sPointer: UnsafeMutablePointer<UInt8>) -> Int in
             return mnemonicString.withCString { (mPointer) -> Int in

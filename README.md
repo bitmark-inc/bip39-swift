@@ -52,7 +52,7 @@ pod 'BIP39'
 To integrate BIP39 into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "git@github.com:bitmark-inc/BIP39"
+github "bitmark-inc/bip39-swift"
 ```
 
 Run `carthage update` to build the framework and drag the built `BIP39.framework` into your Xcode project. 
