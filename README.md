@@ -22,23 +22,13 @@
 
 # BIP39
 
-<p align="center">
-ℹ️ Short description of BIP39
-</p>
-
-## Features
-
-- [x] ℹ️ Add BIP39 features
-
-## Example
-
-The example application is the best way to see `BIP39` in action. Simply open the `BIP39.xcodeproj` and run the `Example` scheme.
+This is a simple Swift wrapper for BIP39, implementation of BIP 39 "Mnemonic code for generating deterministic keys" standard for use in [Blockchain Commons](https://www.BlockchainCommons.com) Software Projects**
 
 ## Installation
 
 ### CocoaPods
 
-BIP39 is available through [CocoaPods](http://cocoapods.org). To install
+BIP39 is available through [CocoaPods](https://cocoapods.org/pods/BIP39). To install
 it, simply add the following line to your Podfile:
 
 ```bash
@@ -75,9 +65,28 @@ Alternatively navigate to your Xcode project, select `Swift Packages` and click 
 
 If you prefer not to use any of the aforementioned dependency managers, you can integrate BIP39 into your project manually. Simply drag the `Sources` Folder into your Xcode project.
 
-## Usage
+## Example code
 
-ℹ️ Describe the usage of your Kit
+Returns the English mnemonic string for the given BIP39 word
+```swift
+BIP39Util.mnemonicFromWord(1) // "ability"
+```
+
+Returns the BIP39 words for the given English mnemonics
+```swift
+BIP39Util.wordFromMnemonic("ability") // 1
+```
+
+Returns the BIP39 English mnemonics for the given secret.
+```swift
+BIP39Util.mnemonicsFromSecret(Data(hexString: "baadf00dbaadf00d")!)
+```
+
+Returns the secret for the given English mnemonics.
+```swift
+BIP39Util.secretFromMnemonics(["rival", "hurdle", "address", "inspire", "tenant", "alone"])
+```
+
 
 ## Contributing
 Contributions are very welcome 🙌
