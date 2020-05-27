@@ -12,5 +12,7 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = "2.0"
   s.osx.deployment_target     = "10.10"
   s.source_files              = "Sources/**/*"
+  s.preserve_paths            = "Sources/module.map"
+  s.xcconfig                  = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/BIP39/Sources' }
   s.frameworks                = "Foundation"
 end
