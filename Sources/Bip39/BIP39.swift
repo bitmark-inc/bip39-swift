@@ -27,6 +27,10 @@ public struct BIP39Util {
         let maxLength = 1024
         let mnemonic = UnsafeMutablePointer<Int8>.allocate(capacity: maxLength)
 
+        defer {
+            mnemonic.deallocate()
+        }
+
         let len = secret.withUnsafeBytes { (unsafeBufferPointer) -> Int in
             guard let sPointer = unsafeBufferPointer.bindMemory(to: UInt8.self).baseAddress else {
                 return 0

@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name                      = "BIP39"
-  s.version                   = "1.0.0"
+  s.version                   = "1.0.1"
   s.summary                   = "BIP39"
   s.homepage                  = "https://github.com/bitmark-inc/bip39-swift"
   s.license                   = { :type => "MIT", :file => "LICENSE" }
   s.author                    = { "Bitmark Inc." => "support@bitmark.com" }
-  s.social_media_url = "https://twitter.com/bitmarkinc"
+  s.social_media_url          = "https://twitter.com/bitmarkinc"
   s.source                    = { :git => "https://github.com/bitmark-inc/bip39-swift", :tag => s.version.to_s }
   s.swift_version             = "5.1"
   s.ios.deployment_target     = "8.0"
