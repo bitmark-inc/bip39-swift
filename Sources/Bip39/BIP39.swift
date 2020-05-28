@@ -25,22 +25,25 @@ public struct BIP39Util {
 
     public static func mnemonicsFromSecret(_ secret: Data) -> [String]? {
         let maxLength = 1024
-        var mnemonic: [CChar] = Array(repeating: 0, count: maxLength)
+        let mnemonic = UnsafeMutablePointer<Int8>.allocate(capacity: maxLength)
 
         let len = secret.withUnsafeBytes { (unsafeBufferPointer) -> Int in
             guard let sPointer = unsafeBufferPointer.bindMemory(to: UInt8.self).baseAddress else {
                 return 0
             }
-            return CBip39.bip39_mnemonics_from_secret(sPointer, secret.count, &mnemonic, maxLength)
+            return CBip39.bip39_mnemonics_from_secret(sPointer, secret.count, mnemonic, maxLength)
         }
 
         if len == 0 {
             // Fail case, return empty array
             return nil
         }
-        
-        let mnemonicString = String(cString: mnemonic)
 
+        guard let mnemonicPointer = UnsafeBufferPointer(start: mnemonic, count: len).baseAddress else {
+            return nil
+        }
+
+        let mnemonicString = String(cString: mnemonicPointer)
         return mnemonicString.components(separatedBy: mnemonicSparator)
     }
 
