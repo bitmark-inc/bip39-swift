@@ -92,7 +92,7 @@ platform :ios do
       cache_builds: true
     )
     # Pod lib lint to ensure CocoaPods compatibility
-    pod_lib_lint(allow_warnings: true)
+    pod_spec_lint
   end
 
 end
