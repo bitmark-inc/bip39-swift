@@ -179,7 +179,7 @@
 		21D4B8F62459890100FDA978 /* pbkdf2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pbkdf2.c; sourceTree = "<group>"; };
 		21D4B8FF2459890E00FDA978 /* sha2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha2.c; sourceTree = "<group>"; };
 		21D4B90924598E5F00FDA978 /* BIP39.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIP39.swift; sourceTree = "<group>"; };
-		21D4B912245996D600FDA978 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
+		21D4B912245996D600FDA978 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		3D9C429022745894000A6585 /* BIP39.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BIP39.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C429C227458E8000A6585 /* BIP39.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BIP39.plist; sourceTree = "<group>"; };
 		3D9C429D227458E8000A6585 /* BIP39Tests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BIP39Tests.plist; sourceTree = "<group>"; };
@@ -205,6 +205,7 @@
 		3D9C432D2274629C000A6585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9C432F2274629C000A6585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DB91AC4229AC263002668DA /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
+		5B2F31582486599300A46790 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
 		5B70D6502477CEB10035D3AC /* BIP39.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIP39.h; sourceTree = "<group>"; };
 		5B820424247CC277009442EF /* BIP39NewContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIP39NewContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -276,14 +277,6 @@
 				21D4B8BB245987B200FDA978 /* csuffix_array.c */,
 				21D4B8B2245987A900FDA978 /* cprefix2.c */,
 				21D4B8A0245986EE00FDA978 /* cbip39.c */,
-				21D4B8782459848F00FDA978 /* include */,
-			);
-			path = CBip39;
-			sourceTree = "<group>";
-		};
-		21D4B8782459848F00FDA978 /* include */ = {
-			isa = PBXGroup;
-			children = (
 				21D4B8792459855E00FDA978 /* carduino-support.h */,
 				21D4B87E2459862900FDA978 /* cbc-bip39.h */,
 				21D4B8832459864400FDA978 /* cbip39.h */,
@@ -292,7 +285,7 @@
 				21D4B8922459868A00FDA978 /* cprefix2.h */,
 				21D4B897245986A300FDA978 /* csuffix_array.h */,
 			);
-			path = include;
+			path = CBip39;
 			sourceTree = "<group>";
 		};
 		21D4B8C42459887600FDA978 /* CCrypto-Base */ = {
@@ -302,14 +295,6 @@
 				21D4B8F62459890100FDA978 /* pbkdf2.c */,
 				21D4B8ED245988F800FDA978 /* memzero.c */,
 				21D4B8E4245988EF00FDA978 /* hmac.c */,
-				21D4B8C52459889900FDA978 /* include */,
-			);
-			path = "CCrypto-Base";
-			sourceTree = "<group>";
-		};
-		21D4B8C52459889900FDA978 /* include */ = {
-			isa = PBXGroup;
-			children = (
 				21D4B8C6245988A800FDA978 /* bc-crypto-base.h */,
 				21D4B8CB245988B300FDA978 /* hmac.h */,
 				21D4B8D0245988C000FDA978 /* memzero.h */,
@@ -317,7 +302,7 @@
 				21D4B8DA245988D200FDA978 /* pbkdf2.h */,
 				21D4B8DF245988DB00FDA978 /* sha2.h */,
 			);
-			path = include;
+			path = "CCrypto-Base";
 			sourceTree = "<group>";
 		};
 		21D4B90824598DAE00FDA978 /* Bip39 */ = {
@@ -362,6 +347,7 @@
 				3D9C429C227458E8000A6585 /* BIP39.plist */,
 				3D9C429D227458E8000A6585 /* BIP39Tests.plist */,
 				3D9C42D422745B48000A6585 /* BIP39.podspec */,
+				5B2F31582486599300A46790 /* Package.swift */,
 				3D9C42D622745C9D000A6585 /* Fastfile */,
 				3D9C42D222745B48000A6585 /* LICENSE */,
 				3D9C42D522745B48000A6585 /* README.md */,
@@ -376,10 +362,8 @@
 		3D9C42A0227458FA000A6585 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				21D4B912245996D600FDA978 /* module.map */,
 				21D4B90824598DAE00FDA978 /* Bip39 */,
-				21D4B8C42459887600FDA978 /* CCrypto-Base */,
-				21D4B8772459847E00FDA978 /* CBip39 */,
+				5B2F315D24865E4D00A46790 /* Modules */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -411,6 +395,16 @@
 				3D9C432F2274629C000A6585 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		5B2F315D24865E4D00A46790 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				21D4B912245996D600FDA978 /* module.modulemap */,
+				21D4B8C42459887600FDA978 /* CCrypto-Base */,
+				21D4B8772459847E00FDA978 /* CBip39 */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1524,7 +1518,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark-iOS.Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Sources/CBip39/Example-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1548,7 +1542,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark-iOS.Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Sources/CBip39/Example-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
