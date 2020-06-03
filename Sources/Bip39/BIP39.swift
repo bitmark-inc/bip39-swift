@@ -25,19 +25,29 @@ public struct BIP39Util {
 
     public static func mnemonicsFromSecret(_ secret: Data) -> [String]? {
         let maxLength = 1024
-        var mnemonic: [CChar] = Array(repeating: 0, count: maxLength)
+        let mnemonic = UnsafeMutablePointer<Int8>.allocate(capacity: maxLength)
 
-        let len = secret.withUnsafeBytes { (sPointer: UnsafePointer<UInt8>) -> Int in
-            return CBip39.bip39_mnemonics_from_secret(sPointer, secret.count, &mnemonic, maxLength)
+        defer {
+            mnemonic.deallocate()
         }
-        
+
+        let len = secret.withUnsafeBytes { (unsafeBufferPointer) -> Int in
+            guard let sPointer = unsafeBufferPointer.bindMemory(to: UInt8.self).baseAddress else {
+                return 0
+            }
+            return CBip39.bip39_mnemonics_from_secret(sPointer, secret.count, mnemonic, maxLength)
+        }
+
         if len == 0 {
             // Fail case, return empty array
             return nil
         }
-        
-        let mnemonicString = String(cString: mnemonic)
 
+        guard let mnemonicPointer = UnsafeBufferPointer(start: mnemonic, count: len).baseAddress else {
+            return nil
+        }
+
+        let mnemonicString = String(cString: mnemonicPointer)
         return mnemonicString.components(separatedBy: mnemonicSparator)
     }
 
@@ -46,12 +56,16 @@ public struct BIP39Util {
         let mnemonicString = mnemonics.joined(separator: mnemonicSparator)
 
         var secret = Data(count: maxLength)
-        let len = secret.withUnsafeMutableBytes { (sPointer: UnsafeMutablePointer<UInt8>) -> Int in
+        let len = secret.withUnsafeMutableBytes { (unsafeMutableRawBufferPointer) -> Int in
+            guard let sPointer = unsafeMutableRawBufferPointer.bindMemory(to: UInt8.self).baseAddress else {
+                return 0
+            }
+
             return mnemonicString.withCString { (mPointer) -> Int in
                 return CBip39.bip39_secret_from_mnemonics(mPointer, sPointer, maxLength)
             }
         }
-        
+
         if len == 0 {
             return nil
         }

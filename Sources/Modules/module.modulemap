@@ -1,4 +1,4 @@
 module CBip39 [system] {
-    header "CBip39/include/cbip39.h"
+    header "CBip39/cbip39.h"
     export *
 }

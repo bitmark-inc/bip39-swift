@@ -1,9 +1,9 @@
-#include "include/cbip39.h"
-#include "include/carduino-support.h"
-#include "include/cindex_char.h"
+#include "cbip39.h"
+#include "carduino-support.h"
+#include "cindex_char.h"
 
-#include "include/cprefix1.h"
-#include "include/cprefix2.h"
+#include "cprefix1.h"
+#include "cprefix2.h"
 
 #include "csuffix_array.h"
 
@@ -11,9 +11,9 @@
 #include <string.h>
 
 #ifdef ARDUINO
-#include "bc-crypto-base.h"
+#include "../CCrypto-Base/bc-crypto-base.h"
 #else
-#include "bc-crypto-base.h"
+#include "../CCrypto-Base/bc-crypto-base.h"
 #endif
 
 // This class provides a couple of services related to Bip39 mnemonic sentences
